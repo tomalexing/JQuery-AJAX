@@ -1,0 +1,28 @@
+@import "compass/css3", "_animations";
+
+$experimental-support-for-khtml: false;
+$color : green;
+@include keyframes(anim-1) {
+	from {
+		 border-color: lighten($color, 10);
+		 box-shadow: 0px 0px 10px lighten($color, 10);
+	}
+	
+	25% {
+		border-color: lighten($color, 10);
+		box-shadow: 0px 0px 10px lighten($color, 20);
+	}
+	50% {
+		border-color: lighten($color, 10);
+		box-shadow: 0px 0px 10px lighten($color, 70);
+	}
+	75% {
+		border-color: lighten($color, 10);
+		box-shadow: 0px 0px 10px lighten($color, 20);
+	}
+	to {
+		border-color: lighten($color, 10);
+		box-shadow: 0px 0px 10px lighten($color, 10);
+	}
+}
+

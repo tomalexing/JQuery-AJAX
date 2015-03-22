@@ -1,0 +1,48 @@
+// Normally mainpage styles
+
+body
+	margin-left: 50px
+	margin-top: 50px
+
+h2+ul
+	margin-top: 5px
+ul
+	display: table
+
+li
+	list-style-type: decimal
+	list-style-position: inside
+	margin-left: 10px
+	background-color: #eee
+	display: block
+	margin: 5px
+	
+p
+	padding: 3px
+	margin-left: 10px
+p>input
+	display: inline
+	height: 20px
+	border: 1px solid #eee
+	background: #e1e1e1
+	
+	margin-left: 20px
+	
+	line-height: 20px
+	font-size: 15px
+	&:focus
+		@include animation(anim-1 .6s linear infinite)
+
+p:first-of-type>input
+	margin-left: 17px
+button
+	display: inline
+	width: 15px
+	height: 15px
+	border-radius: 5px
+	background: red
+	color: #fff
+	text-shadow: 0 -1px 0 #000
+#add-order
+	width: 55px
+	background: green
